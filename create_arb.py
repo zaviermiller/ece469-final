@@ -58,10 +58,10 @@ def graph_waveform(data) -> None:
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python create_arb.py <csv filename>")
+        print("Usage: python create_arb.py <wav filename>")
         sys.exit(1)
     elif not sys.argv[1].endswith(".wav"):
-        print("Usage: python create_arb.py <csv filename>")
+        print("Usage: python create_arb.py <wav filename>")
         sys.exit(1)
     arb = create_arb_from_wav(sys.argv[1])
     arb.print()
