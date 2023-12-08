@@ -47,15 +47,6 @@ def create_arb_from_wav(wav_filename) -> ArbFile:
 
     return ArbFile(sample_rate, FILE_FORMAT, HIGH_LEVEL, LOW_LEVEL, CHANNEL, data)
 
-
-def graph_waveform(data) -> None:
-
-    # use matplot lib to graph the wav file
-    import matplotlib.pyplot as plt
-    plt.plot(data)
-    plt.show()
-
-
 def main():
     if len(sys.argv) < 2:
         print("Usage: python create_arb.py <wav filename>")
@@ -65,7 +56,4 @@ def main():
         sys.exit(1)
     arb = create_arb_from_wav(sys.argv[1])
     arb.print()
-    # graph_wav_file(sys.argv[1])
-
-
 main()
