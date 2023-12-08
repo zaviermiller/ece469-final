@@ -15,3 +15,13 @@ python create_arb.py <wav filename>
 ```
 
 This will output the new file to `stdout`. You can redirect this output stream to a file to save it a file.
+
+## Configuration
+You can also configure the following parameters in the Python file (the defaults are listed below as well)
+```python
+SAMPLE_RATE=44100
+FILE_FORMAT="1.10"
+HIGH_LEVEL=5
+LOW_LEVEL=-5
+CHANNEL='left'
+```
